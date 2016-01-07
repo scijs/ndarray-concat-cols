@@ -6,7 +6,6 @@ var ndarray = require('ndarray')
 var assert = require('chai').assert
 var ndt = require('ndarray-tests')
 var pool = require('ndarray-scratch')
-var show = require('ndarray-show')
 
 describe('concat-cols', function () {
   it('concatenating nothing fails', function () {
@@ -42,7 +41,6 @@ describe('concat-cols', function () {
     var out = c([x, y, x])
     assert(ndt.equal(out, ndarray([1, 4, 1, 2, 5, 2, 3, 6, 3], [3, 3])))
   })
-
 
   it('concatenates cols into an output array', function () {
     //

@@ -10,7 +10,7 @@ var defaults = {
 }
 
 function concatColumns () {
-  var output, input, inputs, options, d, i, shape, l, slice, s1, lo, hi
+  var output, input, inputs, options, d, i, shape, slice, s1, lo, hi
 
   options = extend({}, defaults)
 
