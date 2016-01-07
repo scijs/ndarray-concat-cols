@@ -12,13 +12,13 @@ Understanding `[+]` in the comments below to indicate column concatenation,
 
 ```javascript
 var ndarray = require('ndarray')
-var r = require('ndarray-concat-cols')
+var c = require('ndarray-concat-cols')
 
 // Concatenating vectors:
 //   [1]     [4]   [1 4]
 //   [2] [+] [5] = [2 5]
 //   [3]     [6]   [3 6]
-r([ ndarray([1, 2, 3]), ndarray([4, 5, 6]) ])
+c([ ndarray([1, 2, 3]), ndarray([4, 5, 6]) ])
 // => ndarray([1, 4, 2, 5, 3, 6], [3, 2])
 
 // Concatenating matrices:
@@ -26,7 +26,7 @@ r([ ndarray([1, 2, 3]), ndarray([4, 5, 6]) ])
 //   [3 4] [+] [8] -> [3 4 8]
 //   [5 6]     [9]    [5 6 9]
 //
-r([ ndarray([1, 2, 3, 4, 5, 6], [3, 2]), ndarray([7, 9, 9], [3, 1]) ])
+c([ ndarray([1, 2, 3, 4, 5, 6], [3, 2]), ndarray([7, 9, 9], [3, 1]) ])
 // => ndarray([1, 2, 7, 3, 4, 8, 5, 6, 9], [3, 3])
 ```
 
@@ -46,6 +46,9 @@ $ npm install ndarray-concat-cols
   - `dtype`: If no `output` ndarray is provided, the dtype of the output will be `double` (equivalently `float64`) by default, or otherwise the dtype specified here. See [ndarray dtypes](https://github.com/scijs/ndarray#arraydtype).
 
 **Returns**: A reference to the output ndarray containing the concatenated data.
+
+## See Also
+- [ndarray-concat-rows](https://github.com/scijs/ndarray-concat-rows)
 
 ## License
 &copy; 2016 Ricky Reusser. MIT License.
