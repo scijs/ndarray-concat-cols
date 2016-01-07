@@ -1,6 +1,6 @@
 # ndarray-concat-cols [![Build Status](https://travis-ci.org/scijs/ndarray-concat-cols.svg)](https://travis-ci.org/scijs/ndarray-concat-cols) [![npm version](https://badge.fury.io/js/ndarray-concat-cols.svg)](https://badge.fury.io/js/ndarray-concat-cols) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-> Concatenate ndarrays by column (along the last)
+> Concatenate ndarrays by column (along the last dimension)
 
 ## Introduction
 
