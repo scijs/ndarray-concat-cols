@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = concatColumns
-var extend = require('../ndarray-linspace/node_modules/util-extend')
+var extend = require('util-extend')
 var ops = require('ndarray-ops')
 var pool = require('ndarray-scratch')
 
